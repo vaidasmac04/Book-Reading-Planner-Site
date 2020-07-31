@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book reading planner site</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+
+  <body>
+    <div class="gif-container">
+		<img src="images/book-gif.gif" alt="book">
+	</div>
+	
+    <div id="userInputContainer">
+      <form>
+
+        Enter the book title: <input type="text" id="bookTitleField"> <br>
+        <p class="validation-field" id="bookTitleValidationField"> </p>
+		
+        Enter the number of pages: <input type="number" id="pagesField" min="1"> <br>
+		<p class="validation-field" id="pagesValidationField"> labas </p>
+		
+        Choose time interval: from <input  type="date" id="readingFromField"> to  <input type="date" id="readingToField"> <br>
+		<p class="validation-field" id="readingFromValidationField"> </p>
+		<p class="validation-field" id="readingToValidationField"> </p>
+		
+        Enter the number of free days: <input type="number" id="freeDaysField" min="0"> <br>
+		<p class="validation-field" id="freeDaysValidationField"> </p>
+		
+        Select reading plan type:
+          <label for="linear-radio"> linear </label>
+          <input type="radio" value="linear" id="linearRadio" name="planGroup" checked> 
+		  
+		  <label for="linear-radio"> random </label>
+          <input type="radio" value="random" id="randomRadio" name="planGroup"> <br>
+
+          <input style="margin-top:10px;padding-right:40px;padding-left:40px;" type="button" value="Go!" onClick="createReadingPlan();">
+
+      </form>
+	</div>
+	
+	<div class="gif-container">
+		<img src="images/book-gif.gif" alt="book">
+	</div>
+	
+	<div id="planTableContainer">
+	  
+	</div>
+	
+	<script src="scripts/book.js"></script> 
+	<script src="scripts/helpers.js"></script> 
+	<script src="scripts/plan-creation-form-validation.js"></script> 
+	<script src="scripts/reading-plan.js"></script> 
+	<script src="scripts/reading-plan-linear.js"></script> 
+	<script src="scripts/reading-plan-random.js"></script> 
+	<script src="scripts/reading-plan-table-creation.js"></script> 
+	<script src="scripts/startup.js"></script> 
+  </body>
+
+</html> 
