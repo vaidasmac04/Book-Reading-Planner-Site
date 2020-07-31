@@ -1,2 +1,2 @@
-# Book-reading-planner-site
-Website for making book reading plan
+# Book Reading Planner Website
+Website for making book reading plan.
